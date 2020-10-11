@@ -1,0 +1,57 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-with-line-in-center {
+    width: 100%;
+}
+
+.text-with-line-in-center-text {
+    width: 1px;
+    padding: 0 3px;
+    white-space: nowrap;
+}
+
+div.joinGame {
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+div.dice-icon {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 4.4rem;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 0px;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+div.dice-icon > span {
+    position: relative;
+    bottom: .5rem;
+}
+
+#gameCode {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#createGame {
+    width: 100%;
+}

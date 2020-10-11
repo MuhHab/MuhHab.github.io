@@ -1,0 +1,45 @@
+div.dice {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 0px;
+    display: inline-block;
+    color: white;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+div.dice > span.symbol {
+    position: relative;
+    bottom: 0.4rem;
+}
+
+div.dice > span.number {
+    position: relative;
+    bottom: 0.25rem;
+}
+
+div.dice > span.symbol-low {
+    position: relative;
+    bottom: 0.1rem;
+}
+
+div.black {
+    background-color: black;
+}
+
+div.green {
+    background-color: green;
+}
+
+div.blue {
+    background-color: blue;
+}
+
+div.red {
+    background-color: red;
+}

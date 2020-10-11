@@ -1,0 +1,6 @@
+{
+  "-1": "An error has occurred in which the server was not supplied enough information.\n\n There is most likely a bug in the program.\n\nApologies for the inconvenience.",
+  "0": "A general error for which no reason could be provided has occurred.\n\nApologies for the inconvenience.",
+  "1": "The game you have tried to join appears to not exist.\n\nPlease verify that the game is still active and ensure that you have properly typed the game code.",
+  "2": "The game you have tried to join appears to be full.\n\nCheck with the host to see if you can join the next round."
+}

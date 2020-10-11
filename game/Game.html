@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EQ Online</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="../util.css">
+    <link rel="stylesheet" href="dice.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">EQ Online</a>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Leave Game</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid fillRemaining">
+        <div class="row fullHeight">
+            <div class="col-md-2 fullHeight" id="sidebar">
+                <!-- The variations that will be called at the start of the match -->
+                <div>
+                    <h5 class="text-center no-margin-bottom">Variations</h5>
+                    <p id="variations" class="text-center">MOPS<br>TOPS<br>Base 9</p>
+                </div>
+
+                <!-- The player list; also shows whose turn it is -->
+                <div class="btn-group-vertical" id="players">
+                    <span class="btn btn-primary">Player 1</span>
+                    <span class="btn btn-outline-secondary">Player 2</span>
+                    <span class="btn btn-outline-secondary">Player 3</span>
+                </div>
+
+                <h1 id="timer" class="text-xl-center">2:00</h1>
+                <!-- These are the challenge buttons for challenge now and challenge impossible, -->
+                <!-- which will trigger the endgame phase -->
+                <div class="btn-group-vertical" id="challenges">
+                    <button role="button" class="btn btn-success challengeButton" id="challengeNow">
+                        Challenge Now
+                    </button>
+                    <button role="button" class="btn btn-warning challengeButton" id="challengeImpossible">
+                        Challenge Impossible
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="col-md-10 fullHeight gameMat no-select">
+                <!-- This is the playing field -->
+                <h3>Resources</h3>
+                <div class="resources resources-unrolled" id="resources">
+                    <h5 class="loading-dice">Loading dice data...</h5>
+                </div>
+                <!-- Permitted, Forbidden, and Required -->
+                <div class="categories">
+                    <div class="category">
+                        <h3>Required</h3>
+                        <div></div>
+                    </div>
+                    <div class="category">
+                        <h3>Permitted</h3>
+                        <div></div>
+                    </div>
+                    <div class="category category-last">
+                        <h3>Forbidden</h3>
+                        <div></div>
+                    </div>
+                </div>
+
+                <!-- Goal -->
+                <div class="goalContainer">
+                    <h3>Goal:</h3>
+                    <div id="goal"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The scripts for the game -->
+    <script src="game.js"></script>
+    <script src="util.js"></script>
+</body>
+</html>

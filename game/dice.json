@@ -1,0 +1,118 @@
+[
+  {
+    "color": "black",
+    "symbols": [
+      {
+        "symbol": "+",
+        "class": "symbol"
+      },
+      {
+        "symbol": "÷",
+        "class": "symbol"
+      },
+      {
+        "symbol": "√",
+        "class": "number"
+      },
+      {
+        "symbol": "7",
+        "class": "number"
+      },
+      {
+        "symbol": "8",
+        "class": "number"
+      },
+      {
+        "symbol": "9",
+        "class": "number"
+      }
+    ]
+  },
+  {
+    "color": "green",
+    "symbols": [
+      {
+        "symbol": "-",
+        "class": "symbol"
+      },
+      {
+        "symbol": "×",
+        "class": "symbol"
+      },
+      {
+        "symbol": "4",
+        "class": "number"
+      },
+      {
+        "symbol": "5",
+        "class": "number"
+      },
+      {
+        "symbol": "6",
+        "class": "number"
+      },
+      {
+        "symbol": "^",
+        "class": ""
+      }
+    ]
+  },
+  {
+    "color": "blue",
+    "symbols": [
+      {
+        "symbol": "÷",
+        "class": "symbol"
+      },
+      {
+        "symbol": "×",
+        "class": "symbol"
+      },
+      {
+        "symbol": "0",
+        "class": "number"
+      },
+      {
+        "symbol": "1",
+        "class": "number"
+      },
+      {
+        "symbol": "2",
+        "class": "number"
+      },
+      {
+        "symbol": "3",
+        "class": "number"
+      }
+    ]
+  },
+  {
+    "color": "red",
+    "symbols": [
+      {
+        "symbol": "+",
+        "class": "symbol"
+      },
+      {
+        "symbol": "-",
+        "class": "symbol"
+      },
+      {
+        "symbol": "0",
+        "class": "number"
+      },
+      {
+        "symbol": "1",
+        "class": "number"
+      },
+      {
+        "symbol": "2",
+        "class": "number"
+      },
+      {
+        "symbol": "3",
+        "class": "number"
+      }
+    ]
+  }
+]

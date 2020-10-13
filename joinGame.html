@@ -15,24 +15,37 @@
         <div class="dice-icon no-select"><span>√</span></div>
         <!-- The title -->
         <h1>EQ Online</h1>
-        <!-- place to enter the game code -->
-        <div class="input-group">
-            <input class="form-control" placeholder="Game Code" id="gameCode" maxlength="4">
-            <div class="input-group-append">
-                <button class="btn btn-primary" role="button" id="joinGame" disabled>Join Game</button>
-            </div>
-        </div>
-        <!-- The divider between create game -->
-        <table class="text-with-line-in-center">
-            <td><hr /></td>
-            <td class="text-with-line-in-center-text">Or</td>
-            <td><hr /></td>
-        </table>
-        <!-- create game button -->
-        <button class="btn btn-primary" role="button" id="createGame">Host Game</button>
-    </div>
 
-    <script src="joinGame.js"></script>
+        <div id="joinMenu">
+            <!-- Name -->
+            <input class="form-control" placeholder="Name" id="name" maxlength="20">
+            <hr>
+            <!-- place to enter the game code -->
+            <div class="input-group">
+                <input class="form-control" placeholder="Game Code" id="gameCode" maxlength="4">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" role="button" id="joinGame" disabled>Join Game</button>
+                </div>
+            </div>
+            <!-- The divider between create game -->
+            <table class="text-with-line-in-center">
+                <tr>
+                    <td><hr /></td>
+                    <td class="text-with-line-in-center-text">Or</td>
+                    <td><hr /></td>
+                </tr>
+            </table>
+            <!-- create game button -->
+            <button class="btn btn-primary" role="button" id="createGame" disabled>Host Game</button>
+        </div>
+        <div id="loading">
+            <div class="spinner-border text-info" role="status"></div>
+        </div>
+        <div id="failed">
+            <p>Connection to server has failed.</p>
+            <button id="retry" class="btn btn-danger" role="button">Retry</button>
+        </div>
+    </div>
 
     <!-- Error modal -->
     <div class="modal fade" id="errorModal" tabindex="-1" role="dialog">
@@ -48,12 +61,14 @@
                     <p id="errorText"></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="joinGame.js"></script>
+    <script src="util.js"></script>
 
     <!-- Bootstrap junk -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

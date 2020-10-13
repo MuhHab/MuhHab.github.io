@@ -55,3 +55,11 @@ div.dice-icon > span {
 #createGame {
     width: 100%;
 }
+
+#joinMenu, #failed {
+    display: none;
+}
+
+#failed > p {
+    color: red;
+}
